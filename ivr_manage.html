@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>Purple Numbers - Premium Rate Numbers</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
+	<script type="text/javascript" src="assets/js/jquery.editable.select.demo.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="assets/js/html5.js"></script> 
+	<script type="text/javascript">
+		var E=('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:details:keygen:meter:progress:figcaption:main:mark:summary:time:wbr').split(':');
+		for(var c=0;c<E.length;c++){document.createElement(E[c]);} 
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="layout" class="flexed">	
+		<header class="inversed">
+			<div class="holder wide">
+				<a href="#" id="logo"><img src="images/logo_inversed_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a>
+
+				<div class="menu-holder">
+					<nav id="menu-main">
+						<ul>						
+							<li><a href="numbers.html">Numbers</a></li>
+							<li><a href="check_access.html">Check access</a></li>
+							<li><a href="sub_accounts.html">Sub-accounts</a></li>
+							<li><a href="my_summary.html">My Summary</a></li>
+							<li><a href="online_calls.html">On Line Calls</a></li>
+							<li><a href="test_panel.html">Test panel</a></li>
+							<li class="active"><a href="ivr.html">IVR</a></li>
+							<li><a href="my_account.html">My Account</a></li>
+						</ul>
+					</nav>
+
+					<div id="bl-account">
+						<a href="my_account.html" class="greetings">Hello Mr. paras.</a>
+						<div class="messages">3</div>
+						<a href="#" class="logout">Log out</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">			
+			<div class="holder">
+				
+				<h1>MANAGE IVR</h1>
+
+				<div class="tools-right header-tools">
+					<div class="btn-line">
+						<button class="btn type2">Add ivr</button>
+					</div>
+				</div>
+
+				<article class="wnd" id="ivr">
+					<div class="padded">
+						<label>Select IVR from the list</label>
+						
+						<div class="filter">
+							<ul class="ivr-list" id="ivr-list">
+								<li><a href="#" data-title="98392">98392</a></li>
+								<li><a href="#" data-title="036749">036749</a></li>
+								<li><a href="#" data-title="25626">25626</a></li>
+								<li><a href="#" data-title="036749">036749</a></li>
+							</ul>
+
+							<div class="wrap">
+								<div class="input-holder">
+									<input type="text" name="title" placeholder="Title" maxlength="255" value="" id="ivr-title">
+									<i>Title</i>
+								</div>
+
+								<div class="file-add">
+									<div class="upload-file">
+										<a href="#" class="dotted">Choose a mp3 file</a>
+									</div>
+									<div class="player">
+										<button class="play"></button>
+										<div class="time">0:00 / 0:00</div>
+										<div class="progressline"><i style="width: 33%;"></i></div>
+										<button class="volume"></button>
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+
+					<div class="table-holder">
+							<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-products .table-holder" data-mobile-only="true">
+								<table cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 1
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_1" checked="checked" id="ivr_11"><label for="ivr_11"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_1" id="ivr_12"><label for="ivr_12"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 2
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_2" checked="checked" id="ivr_21"><label for="ivr_21"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_2" id="ivr_22"><label for="ivr_22"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 3
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_3" id="ivr_31"><label for="ivr_31"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_3" checked="checked" id="ivr_32"><label for="ivr_32"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 4
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_4" checked="checked" id="ivr_41"><label for="ivr_41"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_4" id="ivr_42"><label for="ivr_42"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 5
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_5" checked="checked" id="ivr_51"><label for="ivr_51"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_5" id="ivr_52"><label for="ivr_52"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 6
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_6" id="ivr_61"><label for="ivr_61"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_6" checked="checked" id="ivr_62"><label for="ivr_62"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 7
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_7" id="ivr_71"><label for="ivr_71"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_7" checked="checked" id="ivr_72"><label for="ivr_72"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 8
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_8" checked="checked" id="ivr_81"><label for="ivr_81"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_8" id="ivr_82"><label for="ivr_82"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF 9
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_9" checked="checked" id="ivr_91"><label for="ivr_91"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_9" id="ivr_92"><label for="ivr_92"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF *
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_star" checked="checked" id="ivr_star1"><label for="ivr_star1"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_star" id="ivr_star2"><label for="ivr_star2"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												DTMF #
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_sharp" checked="checked" id="ivr_sharp1"><label for="ivr_sharp1"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_sharp" id="ivr_sharp2"><label for="ivr_sharp2"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+										<tr>
+											<td class="title">
+												<div class="label">Option</div>
+												Time out
+											</td>
+											<td>
+												<div class="label">IVR</div>
+												<input type="radio" name="ivr_timeout" checked="checked" id="ivr_timeout1"><label for="ivr_timeout1"></label>
+												<button class="btn type3">Select IVR</button>
+											</td>
+											<td class="number">
+												<div class="label">Redirected number</div>
+												<input type="radio" name="ivr_timeout" id="ivr_timeout2"><label for="ivr_timeout2"></label>
+												<input type="text" name="number1">
+											</td>
+										</tr>
+									</tbody>									
+								</table>
+							</div>
+						</div>
+						<div class="padded btn-line">
+							<button class="btn">Delete</button>
+							<button class="btn type2">Save</button>
+						</div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<div class="holder wide">
+				<div id="footer-logo"><a href="#"><img src="images/logo.svg" data-src="images/logo.svg" data-src-mobile="images/logo_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a></div>
+				<div id="copyright">&copy;2012 &#150; 2018 Purple Numbers</div>
+				
+				<ul id="footer-menu">
+					<li><a href="contacts.html" target="_blank">Contacts</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-terms" target="_blank">Terms & Conditions</a></li><!--
+					--><li><a href="https://www.exwal.com/#tab-privacy-policy" target="_blank">Privacy Policy</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-aml" target="_blank">AML/KYC</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div id="sticky-bottom-section">
+			<div class="holder">
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-fadeout"></div>
+</body>
+</html>

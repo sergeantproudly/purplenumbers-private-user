@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>Purple Numbers - Premium Rate Numbers</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
+	<script type="text/javascript" src="assets/js/jquery.editable.select.demo.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="assets/js/html5.js"></script> 
+	<script type="text/javascript">
+		var E=('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:details:keygen:meter:progress:figcaption:main:mark:summary:time:wbr').split(':');
+		for(var c=0;c<E.length;c++){document.createElement(E[c]);} 
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="layout" class="flexed">	
+		<header class="inversed">
+			<div class="holder wide">
+				<a href="#" id="logo"><img src="images/logo_inversed_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a>
+
+				<div class="menu-holder">
+					<nav id="menu-main">
+						<ul>						
+							<li><a href="admin_clients.html">Clients</a></li>
+							<li><a href="admin_products.html">Products</a></li>
+							<li class="active"><a href="admin_invoices.html">Invoices</a></li>
+							<li><a href="admin_online_calls.html">On Line Calls</a></li>
+							<li><a href="admin_load_access.html">Load access list</a></li>
+							<li><a href="admin_stats.html">Stats</a></li>
+						</ul>
+					</nav>
+
+					<div id="bl-account">
+						<a href="my_account.html" class="greetings">Hello Mr. paras.</a>
+						<div class="messages">3</div>
+						<a href="#" class="logout">Log out</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">			
+			<div class="holder">
+				
+				<h1>Invoices</h1>
+
+				<article class="wnd" id="invoices">
+					<div class="padded">
+						<form action="#" method="post">
+							<div class="filter">
+								<div class="filter-line">
+									<div class="input-holder">
+										<input type="text" name="client" placeholder="Client" maxlength="255">
+										<i>Client</i>
+									</div>
+									<a href="#" class="pseudo" onclick="showModal('modal-clients');">Select client from list</a>
+								</div>
+								<div class="filter-line second">
+									<div class="block">
+										<h2>Status</h2>
+										<ul class="radio-list">
+											<li><input type="radio" name="payment" id="payment-status1" checked="checked"><label for="payment-status1">All</label></li>
+											<li><input type="radio" name="payment" id="payment-status2"><label for="payment-status2">Unpaid</label></li>
+											<li><input type="radio" name="payment" id="payment-status3"><label for="payment-status3">Paid</label></li>
+										</ul>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="created" placeholder="Created" maxlength="255" class="js-date">
+										<i>Created</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="and" placeholder="And" maxlength="255" class="js-date">
+										<i>And</i>
+									</div>
+									<button class="btn type2">Apply</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="table-holder">
+						<div class="js-fadeout" data-nowrap="false">
+							<table cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td>
+											<div class="label">Country</div>
+											Abkhazia
+										</td>
+										<td>
+											<div class="label">Code</div>
+											7840200
+										</td>
+										<td>
+											<div class="label">Tariff</div>
+											$0.040
+										</td>
+										<td>
+											<div class="label">Payment period</div>
+											1/1 days
+										</td>
+										<td>
+											<div class="label">Test number</div>
+											
+										</td>
+										<td class="access">
+											<div class="label">Access list</div>
+											<button class="btn type3">See</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="label">Country</div>
+											Abkhazia
+										</td>
+										<td>
+											<div class="label">Code</div>
+											7840200
+										</td>
+										<td>
+											<div class="label">Tariff</div>
+											$0.050	
+										</td>
+										<td>
+											<div class="label">Payment period</div>
+											15/15 days
+										</td>
+										<td>
+											<div class="label">Test number</div>
+											
+										</td>
+										<td class="access">
+											<div class="label">Access list</div>
+											<button class="btn type3">See</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="label">Country</div>
+											Afghanistan
+										</td>
+										<td>
+											<div class="label">Code</div>
+											7840200
+										</td>
+										<td>
+											<div class="label">Tariff</div>
+											$0.060	
+										</td>
+										<td>
+											<div class="label">Payment period</div>
+											7/7 days
+										</td>
+										<td>
+											<div class="label">Test number</div>
+											
+										</td>
+										<td class="access">
+											<div class="label">Access list</div>
+											<button class="btn type3">See</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="label">Country</div>
+											Abkhazia
+										</td>
+										<td>
+											<div class="label">Code</div>
+											7840200
+										</td>
+										<td>
+											<div class="label">Tariff</div>
+											$0.040
+										</td>
+										<td>
+											<div class="label">Payment period</div>
+											1/1 days
+										</td>
+										<td>
+											<div class="label">Test number</div>
+											
+										</td>
+										<td class="access">
+											<div class="label">Access list</div>
+											<button class="btn type3">See</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<div class="holder wide">
+				<div id="footer-logo"><a href="#"><img src="images/logo.svg" data-src="images/logo.svg" data-src-mobile="images/logo_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a></div>
+				<div id="copyright">&copy;2012 &#150; 2018 Purple Numbers</div>
+				
+				<ul id="footer-menu">
+					<li><a href="contacts.html" target="_blank">Contacts</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-terms" target="_blank">Terms & Conditions</a></li><!--
+					--><li><a href="https://www.exwal.com/#tab-privacy-policy" target="_blank">Privacy Policy</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-aml" target="_blank">AML/KYC</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div id="sticky-bottom-section">
+			<div class="holder">
+				<div class="btns-right">
+					<button class="btn" id="action-download-excel">Download Excel</button>
+					<button class="btn type2" disabled="disabled" id="action-save-changes">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-fadeout"></div>
+	<div class="modal-wrapper" id="modal-add-price">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Add Price</h1>
+
+				<form action="#" method="post">
+					<div class="form">
+						<div class="input-holder">
+							<input type="text" name="firstname" placeholder="First name *" maxlength="255">
+							<i>First name</i>
+						</div>
+						<div class="input-holder">
+							<select name="currency" placeholder="Currency">
+								<option>US Dollar</option>
+								<option>Euro</option>
+							</select>
+							<i>Currency</i>
+						</div>
+						<div class="input-holder">
+							<input type="text" name="payment_interval" placeholder="Payment interval" maxlength="255">
+							<i>Payment interval</i>
+						</div>
+						<div class="checkbox-list">
+							<ul>
+								<li>
+									<input type="checkbox" name="hidden" id="add-price-cb1"><label for="add-price-cb1">Hidden?</label>
+								</li>
+								<li>
+									<input type="checkbox" name="best_price" id="add-price-cb2"><label for="add-price-cb2">Best price</label>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-line">
+							<input type="submit" name="subm" value="Submit" class="btn type2">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-add-numbers">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Add Number Group</h1>
+
+				<form action="#" method="post">
+					<div class="form">
+						<div class="input-holder">
+							<input type="text" name="starting_number" placeholder="Starting number *" maxlength="255">
+							<i>Starting number</i>
+						</div>
+						<div class="input-holder">
+							<input type="text" name="quantity" placeholder="Quantity *" maxlength="255">
+							<i>Quantity</i>
+						</div>
+						<div class="btn-line">
+							<input type="submit" name="subm" value="Submit" class="btn type2">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-add-product">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Add Product</h1>
+
+				<form action="#" method="post">
+					<div class="form">
+						<div class="input-holder">
+							<input type="text" name="code" placeholder="Code *" maxlength="255">
+							<i>Code</i>
+						</div>
+						<div class="input-holder">
+							<input type="text" name="name" placeholder="Name *" maxlength="255">
+							<i>Name</i>
+						</div>
+						<div class="input-holder">
+							<input type="text" name="supplier" placeholder="Supplier" maxlength="255">
+							<i>Supplier</i>
+						</div>
+						<h3>Rules text</h3>
+						<div class="input-holder">
+							<textarea name="text" placeholder="Rules text">- Traffic originated by hacked PBX, Wangiri or any kind of hacking involved in call origination is NOT Allowed on this range.*
+- Call overlapping is NOT allowed on this range.
+    eg- From one CLI only one call can be done at one time , no multiple calls from single CLI at same time.*</textarea>
+						</div>
+						<div class="input-holder">
+							<input type="text" name="max_rate" placeholder="Max Rate" maxlength="255">
+							<i>Max Rate</i>
+						</div>
+						<div class="input-holder">
+							<select name="currency" placeholder="Currency">
+								<option>US Dollar</option>
+								<option>Euro</option>
+							</select>
+							<i>Currency</i>
+						</div>
+						<div class="btn-line">
+							<input type="submit" name="subm" value="Submit" class="btn type2">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-clients">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Select Clients</h1>
+
+				<div class="filter">
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="name" placeholder="Name" maxlength="255">
+							<i>Name</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="email" name="email" placeholder="E-mail" maxlength="255">
+							<i>E-mail</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="skype" placeholder="Skype name" maxlength="255">
+							<i>Skype name</i>
+						</div>
+					</div>
+					<button class="btn type2">Apply</button>
+				</div>
+
+				<div class="table-holder hidden" id="my-clients-results">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-clients .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[1]" id="edit-entity2-selector-1" /><label for="edit-entity2-selector-1"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[2]" id="edit-entity2-selector-2" /><label for="edit-entity2-selector-2"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[3]" id="edit-entity2-selector-3" /><label for="edit-entity2-selector-3"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[4]" id="edit-entity2-selector-4" /><label for="edit-entity2-selector-4"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[5]" id="edit-entity2-selector-5" /><label for="edit-entity2-selector-5"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[6]" id="edit-entity2-selector-6" /><label for="edit-entity2-selector-6"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[7]" id="edit-entity2-selector-7" /><label for="edit-entity2-selector-7"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[8]" id="edit-entity2-selector-8" /><label for="edit-entity2-selector-8"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="prev disabled"><a href="#">Previous</a></li>
+
+							<li class="first"><a class="act">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li class="last dotted"><a href="#">87</a></li>
+
+							<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

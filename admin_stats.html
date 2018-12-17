@@ -1,0 +1,1613 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>Purple Numbers - Premium Rate Numbers</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
+	<script type="text/javascript" src="assets/js/jquery.editable.select.demo.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="assets/js/html5.js"></script> 
+	<script type="text/javascript">
+		var E=('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:details:keygen:meter:progress:figcaption:main:mark:summary:time:wbr').split(':');
+		for(var c=0;c<E.length;c++){document.createElement(E[c]);} 
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="layout" class="flexed">	
+		<header class="inversed">
+			<div class="holder wide">
+				<a href="#" id="logo"><img src="images/logo_inversed_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a>
+
+				<div class="menu-holder">
+					<nav id="menu-main">
+						<ul>						
+							<li><a href="admin_clients.html">Clients</a></li>
+							<li><a href="admin_products.html">Products</a></li>
+							<li><a href="admin_invoices.html">Invoices</a></li>
+							<li><a href="admin_online_calls.html">On Line Calls</a></li>
+							<li><a href="admin_load_access.html">Load access list</a></li>
+							<li class="active"><a href="admin_stats.html">Stats</a></li>
+						</ul>
+					</nav>
+
+					<div id="bl-account">
+						<a href="my_account.html" class="greetings">Hello Mr. paras.</a>
+						<div class="messages">3</div>
+						<a href="#" class="logout">Log out</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">			
+			<div class="holder">
+				
+				<h1>Stats</h1>
+
+				<div class="tabs" id="tabs-my-summary">
+					<ul class="js-fadeout">
+						<li><a href="#my-summary-stats">Stats</a></li>
+						<li><a href="#my-summary-cdr">CDR</a></li>
+					</ul>
+				</div>
+				<article class="wnd" id="admin-stats">
+					<div id="my-summary-stats" class="my-summary admin-stats">
+						<div class="padded">
+							<div class="filter">
+								<label>Select any filter and click on Show stats to see results</label>
+								<div class="filter-line">
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="clients" placeholder="Clients" maxlength="255">
+											<i>Clients</i>
+										</div>
+										<a href="#" class="pseudo" onclick="showModal('modal-clients');">Select clients from list</a>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="products" placeholder="Products" maxlength="255">
+											<i>Products</i>
+										</div>
+										<a href="#" class="pseudo" onclick="showModal('modal-products');">Select products from list</a>
+									</div>
+
+									<div class="block date">
+										<div class="input-holder">
+											<input type="text" name="date_start" placeholder="Started time" class="js-date">
+											<i>Started time</i>
+										</div>
+									</div>
+
+									<div class="block date">
+										<div class="input-holder">
+											<input type="text" name="date_end" placeholder="And" class="js-date">
+											<i>And</i>
+										</div>
+									</div>
+
+									<button class="btn type2">Show&nbsp;stats</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="my-summary-stats-results">
+							<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
+								<table cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="client">
+												<div class="label">Client</div>
+												md akbar
+											</td>
+											<td>
+												<div class="label">Code</div>
+												2334
+											</td>
+											<td>
+												<div class="label">Country</div>
+												Kazakhstan Special 1
+											</td>
+											<td>
+												<div class="label">Tariff</div>
+												$&nbsp;0.133
+											</td>
+											<td>
+												<div class="label">Payment terms</div>
+												7/1
+											</td>
+											<td>
+												<div class="label">Duration</div>
+												0.27
+											</td>
+											<td>
+												<div class="label">Period</div>
+												2014-08-12 - 2018-08-21	
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												€&nbsp;0.03
+											</td>
+										</tr>
+
+										<tr>
+											<td class="client">
+												<div class="label">Client</div>
+												lassaad neji
+											</td>
+											<td>
+												<div class="label">Code</div>
+												2334
+											</td>
+											<td>
+												<div class="label">Country</div>
+												Latvia SPL Services
+											</td>
+											<td>
+												<div class="label">Tariff</div>
+												$&nbsp;0.133
+											</td>
+											<td>
+												<div class="label">Payment terms</div>
+												7/1
+											</td>
+											<td>
+												<div class="label">Duration</div>
+												32.13
+											</td>
+											<td>
+												<div class="label">Period</div>
+												2014-08-12 - 2018-08-21	
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												€&nbsp;0.11
+											</td>
+										</tr>
+
+										<tr>
+											<td class="client">
+												<div class="label">Client</div>
+												Alexander Anikin
+											</td>
+											<td>
+												<div class="label">Code</div>
+												2334
+											</td>
+											<td>
+												<div class="label">Country</div>
+												Kazakhstan Special 1
+											</td>
+											<td>
+												<div class="label">Tariff</div>
+												$&nbsp;0.133
+											</td>
+											<td>
+												<div class="label">Payment terms</div>
+												7/1
+											</td>
+											<td>
+												<div class="label">Duration</div>
+												1.57
+											</td>
+											<td>
+												<div class="label">Period</div>
+												2014-08-12 - 2018-08-21	
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												€&nbsp;0.08
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div id="my-summary-cdr" class="my-summary">
+						<div class="padded">
+							<div class="filter">
+								<div class="filter-line">
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="clients" placeholder="Clients" maxlength="255">
+											<i>Clients</i>
+										</div>
+										<a href="#" class="pseudo" onclick="showModal('modal-clients');">Select clients from list</a>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="products" placeholder="Products" maxlength="255">
+											<i>Products</i>
+										</div>
+										<a href="#" class="pseudo" onclick="showModal('modal-products');">Select products from list</a>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="invoices" placeholder="Invoices" maxlength="255">
+											<i>Invoices</i>
+										</div>
+										<a href="#" class="pseudo" onclick="showModal('modal-invoices');">Select invoices from list</a>
+									</div>
+								</div>
+								<div class="filter-line col5">
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="date_from" placeholder="Started time" class="js-date">
+											<i>Started time</i>
+										</div>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="date_to" placeholder="And" class="js-date">
+											<i>And</i>
+										</div>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="number" placeholder="Number">
+											<i>Number</i>
+										</div>
+									</div>
+
+									<div class="block">
+										<div class="input-holder">
+											<input type="text" name="caller_id" placeholder="CallerID">
+											<i>CallerID</i>
+										</div>
+									</div>
+
+									<button class="btn type2">Apply</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="my-summary-cdr-results">
+							<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
+								<table cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												447417905080
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.060
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0250
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												728363846253
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.250
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0071
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												447417905080
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.060
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0250
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												728363846253
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.250
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0071
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												447417905080
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.060
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0250
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												728363846253
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.250
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0071
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												447417905080
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.060
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0250
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted green">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												728363846253
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.250
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0071
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted green">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												447417905080
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.060
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0250
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted red">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+										<tr>
+											<td class="agent">
+												<div class="label">Сlient</div>
+												my&nbsp;name&nbsp;lastname
+											</td>
+											<td>
+												<div class="label">Started time</div>
+												09/08/2016-08:06
+											</td>
+											<td>
+												<div class="label">A-number</div>
+												8714610462
+											</td>
+											<td>
+												<div class="label">B-number</div>
+												728363846253
+											</td>
+											<td>
+												<div class="label">Minutes</div>
+												0.417
+											</td>
+											<td>
+												<div class="label">Rate</div>
+												£&nbsp;0.250
+											</td>
+											<td>
+												<div class="label">Amount</div>
+												£&nbsp;0.0071
+											</td>
+											<td>
+												<div class="label">Invoice</div>
+												<span class="dotted red">11229/29-10-2016</span>
+											</td>
+											<td>
+												<div class="label">Status</div>
+												ANSWER
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<div class="holder wide">
+				<div id="footer-logo"><a href="#"><img src="images/logo.svg" data-src="images/logo.svg" data-src-mobile="images/logo_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a></div>
+				<div id="copyright">&copy;2012 &#150; 2018 Purple Numbers</div>
+				
+				<ul id="footer-menu">
+					<li><a href="contacts.html" target="_blank">Contacts</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-terms" target="_blank">Terms & Conditions</a></li><!--
+					--><li><a href="https://www.exwal.com/#tab-privacy-policy" target="_blank">Privacy Policy</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-aml" target="_blank">AML/KYC</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div id="sticky-bottom-section">
+			<div class="holder">
+				<div class="btns-right">
+					<button class="btn" id="action-download-excel">Download Excel</button>
+					<button class="btn type2" disabled="disabled" id="action-save-changes">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-fadeout"></div>
+	<div class="modal-wrapper" id="modal-clients">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Select Clients</h1>
+
+				<div class="filter">
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="name" placeholder="Name" maxlength="255">
+							<i>Name</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="email" name="email" placeholder="E-mail" maxlength="255">
+							<i>E-mail</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="skype" placeholder="Skype name" maxlength="255">
+							<i>Skype name</i>
+						</div>
+					</div>
+					<button class="btn type2">Apply</button>
+				</div>
+
+				<div class="table-holder hidden" id="my-clients-results">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-clients .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[1]" id="modal-client1" /><label for="modal-client1"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client2" /><label for="modal-client2"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client3" /><label for="modal-client3"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client4" /><label for="modal-client4"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client5" /><label for="modal-client5"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client6" /><label for="modal-client6"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client8" /><label for="modal-client8"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="modal-client9" /><label for="modal-client9"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="prev disabled"><a href="#">Previous</a></li>
+
+							<li class="first"><a class="act">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li class="last dotted"><a href="#">87</a></li>
+
+							<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-products">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Select Products</h1>
+
+				<div class="filter">
+					<div class="block status">
+						<h2>Status</h2>
+						<ul class="radio-list">
+							<li><input type="radio" name="status" id="modal-products-status1"><label for="modal-products-status1">Deleted</label></li>
+							<li><input type="radio" name="status" id="modal-products-status2"><label for="modal-products-status2">Active</label></li>
+							<li><input type="radio" name="status" id="modal-products-status3"><label for="modal-products-status3">Hidden</label></li>
+						</ul>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="code" placeholder="Code" maxlength="255">
+							<i>Code</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="country" placeholder="Destination" maxlength="255">
+							<i>Destination</i>
+						</div>
+					</div>
+					<button class="btn type2">Apply</button>
+				</div>
+
+				<div class="table-holder">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-products .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity_selector[1]" id="edit-entity-selector-1" /><label for="edit-entity-selector-1"></label>
+									</td>
+									<td class="code-cell">
+										<div class="label">Code</div>
+										2334
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Chile
+									</td>
+									<td>
+										<div class="label">Rate</div>
+										$&nbsp;0.133
+									</td>
+									<td>
+										<div class="label">Bill</div>
+										4
+									</td>
+									<td>
+										<div class="label">Pay</div>
+										4
+									</td>
+									<td class="status">
+										<div class="label">Status</div>
+										Active
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity_selector[2]" id="edit-entity-selector-2" /><label for="edit-entity-selector-2"></label>
+									</td>
+									<td class="code-cell">
+										<div class="label">Code</div>
+										2334
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kiribati
+									</td>
+									<td>
+										<div class="label">Rate</div>
+										€&nbsp;0.176
+									</td>
+									<td>
+										<div class="label">Bill</div>
+										15
+									</td>
+									<td>
+										<div class="label">Pay</div>
+										15
+									</td>
+									<td class="status">
+										<div class="label">Status</div>
+										Active
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity_selector[3]" id="edit-entity-selector-3" /><label for="edit-entity-selector-3"></label>
+									</td>
+									<td class="code-cell">
+										<div class="label">Code</div>
+										2334
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan Special 1	
+									</td>
+									<td>
+										<div class="label">Rate</div>
+										$&nbsp;0.133
+									</td>
+									<td>
+										<div class="label">Bill</div>
+										11
+									</td>
+									<td>
+										<div class="label">Pay</div>
+										11
+									</td>
+									<td class="status">
+										<div class="label">Status</div>
+										Hidden
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity_selector[4]" id="edit-entity-selector-4" /><label for="edit-entity-selector-4"></label>
+									</td>
+									<td class="code-cell">
+										<div class="label">Code</div>
+										2334
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Seychelles PRS	
+									</td>
+									<td>
+										<div class="label">Rate</div>
+										$&nbsp;0.154
+									</td>
+									<td>
+										<div class="label">Bill</div>
+										5
+									</td>
+									<td>
+										<div class="label">Pay</div>
+										5
+									</td>
+									<td class="status">
+										<div class="label">Status</div>
+										Active
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity_selector[5]" id="edit-entity-selector-5" /><label for="edit-entity-selector-5"></label>
+									</td>
+									<td class="code-cell">
+										<div class="label">Code</div>
+										2334
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Chile
+									</td>
+									<td>
+										<div class="label">Rate</div>
+										$&nbsp;0.133
+									</td>
+									<td>
+										<div class="label">Bill</div>
+										4
+									</td>
+									<td>
+										<div class="label">Pay</div>
+										4
+									</td>
+									<td class="status">
+										<div class="label">Status</div>
+										Active
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="prev disabled"><a href="#">Previous</a></li>
+
+							<li class="first"><a class="act">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li class="last dotted"><a href="#">87</a></li>
+
+							<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>
+
+					<div id="modal-products-sticky-bottom-section" class="bottom-section">
+						<div class="btns-right">
+							<button class="btn type2" id="action-save-selected">Save selected</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-agents">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Select Agents</h1>
+
+				<div class="filter">
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="name" placeholder="Name" maxlength="255">
+							<i>Name</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="email" name="email" placeholder="E-mail" maxlength="255">
+							<i>E-mail</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="skype" placeholder="Skype name" maxlength="255">
+							<i>Skype name</i>
+						</div>
+					</div>
+					<button class="btn type2">Apply</button>
+				</div>
+
+				<div class="table-holder hidden" id="my-summary-cdr-agents-results">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-agents .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[1]" id="edit-entity2-selector-1" /><label for="edit-entity2-selector-1"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[2]" id="edit-entity2-selector-2" /><label for="edit-entity2-selector-2"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[3]" id="edit-entity2-selector-3" /><label for="edit-entity2-selector-3"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[4]" id="edit-entity2-selector-4" /><label for="edit-entity2-selector-4"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[5]" id="edit-entity2-selector-5" /><label for="edit-entity2-selector-5"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[6]" id="edit-entity2-selector-6" /><label for="edit-entity2-selector-6"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[7]" id="edit-entity2-selector-7" /><label for="edit-entity2-selector-7"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										my name lastname
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										support@proudly.ru
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Russia
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity2_selector[8]" id="edit-entity2-selector-8" /><label for="edit-entity2-selector-8"></label>
+									</td>
+									<td class="name-cell">
+										<div class="label">Name</div>
+										spc gold
+									</td>
+									<td>
+										<div class="label">E-mail</div>
+										xyz@shriparascorp.com	
+									</td>
+									<td>
+										<div class="label">Country</div>
+										Kazakhstan
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="prev disabled"><a href="#">Previous</a></li>
+
+							<li class="first"><a class="act">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li class="last dotted"><a href="#">87</a></li>
+
+							<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-invoices">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Select Invoices</h1>
+
+				<div class="filter">
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="date_from" placeholder="Created" maxlength="255" class="js-date">
+							<i>Created</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<input type="text" name="date_to" placeholder="And" maxlength="255" class="js-date">
+							<i>And</i>
+						</div>
+					</div>
+					<div class="block">
+						<div class="input-holder">
+							<select name="status" editable="true" placeholder="Status">
+								<option value="1">Status 1</option>
+								<option value="2">Status 2</option>
+								<option value="3">Status 3</option>
+							</select>
+							<i>Status</i>
+						</div>
+					</div>
+					<button class="btn type2">Apply</button>
+				</div>
+
+				<div class="table-holder hidden" id="my-summary-cdr-invoices-results">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-invoices .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th></th>
+									<th></th>
+									<th><div class="sort">Sort</div></th>
+									<th></th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[1]" id="edit-entity3-selector-1" /><label for="edit-entity3-selector-1"></label>
+									</td>
+									<td class="id-cell">
+										<div class="label">ID</div>
+										15662
+									</td>
+									<td>
+										<div class="label">Created</div>
+										Aug 11 2015
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										€&nbsp;0.0220
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Unpaid
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[2]" id="edit-entity3-selector-2" /><label for="edit-entity3-selector-2"></label>
+									</td>
+									<td class="id-cell">
+										<div class="label">ID</div>
+										14757
+									</td>
+									<td>
+										<div class="label">Created</div>
+										Jul 09 2013
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										$&nbsp;0.0725	
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Paid
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[3]" id="edit-entity3-selector-3" /><label for="edit-entity3-selector-3"></label>
+									</td>
+									<td class="id-cell">
+										<div class="label">ID</div>
+										14509
+									</td>
+									<td>
+										<div class="label">Created</div>
+										Aug 11 2015
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										$&nbsp;0.0990
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Unpaid
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[4]" id="edit-entity3-selector-4" /><label for="edit-entity3-selector-4"></label>
+									</td>
+									<td class="id-cell">
+										<div class="label">ID</div>
+										14505
+									</td>
+									<td>
+										<div class="label">Created</div>
+										Sep 03 2012
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										$&nbsp;0.0038
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Paid
+									</td>
+								</tr>
+								<tr>
+									<td class="cb-cell">
+										<input type="checkbox" name="entity3_selector[5]" id="edit-entity3-selector-5" /><label for="edit-entity3-selector-5"></label>
+									</td>
+									<td class="id-cell">
+										<div class="label">ID</div>
+										15662
+									</td>
+									<td>
+										<div class="label">Created</div>
+										Aug 11 2015
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										€&nbsp;0.0220
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Unpaid
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li class="prev disabled"><a href="#">Previous</a></li>
+
+							<li class="first"><a class="act">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li class="last dotted"><a href="#">87</a></li>
+
+							<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-invoice">
+		<div class="modal">
+			<div class="contents admin-invoice-view">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Invoice 13041/2016-12-19</h1>
+
+				<div class="table-holder" id="my-summary-payment-invoice">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-invoice .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td>
+										<div class="label">Client</div>
+										shri paras
+									</td>
+									<td>
+										<div class="label">Calls Number</div>
+										1545
+									</td>
+									<td>
+										<div class="label">Traffic period start</div>
+										1970-01-01
+									</td>
+									<td>
+										<div class="label">Traffic period end</div>
+										1970-01-01
+									</td>
+									<td>
+										<div class="label">Invoice Date</div>
+										2016-12-19
+									</td>
+									<td>
+										<div class="label">Payment Due</div>
+										2016-12-26
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Paid
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										€&nbsp;24.01
+									</td>
+									<td>
+										<div class="label">Advance</div>
+										Russia
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+				</div>
+
+				<div class="btn-line">
+					<button class="btn type2">Export cdr csv</button>
+					<button class="btn type2">Show cdr</button>
+					<button class="btn unpaid-btn">Unpaid invoice</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-invoice2">
+		<div class="modal">
+			<div class="contents">
+				<div class="modal-close" title="Close"></div>
+
+				<h1>Invoice 1266/29-12-2014</h1>
+
+				<div class="tools-right">
+					<div class="info">4474179 7/7 for 1.1167 minutes, 0.080/min</div>
+				</div>
+
+				<div class="table-holder" id="my-summary-cdr-invoice">
+					<div class="js-fadeout" data-nowrap="false" data-clone-width="#modal-invoice2 .table-holder" data-mobile-only="true">
+						<table cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td>
+										<div class="label">Number</div>
+										1232/23-12-2014
+									</td>
+									<td>
+										<div class="label">Date of the invoice</div>
+										29-12-2014
+									</td>
+									<td>
+										<div class="label">Pay period</div>
+										05-01-2015
+									</td>
+									<td>
+										<div class="label">Status</div>
+										Paid
+									</td>
+									<td>
+										<div class="label">Amount</div>
+										$0.0900
+									</td>
+								</tr>
+							</tbody>					
+						</table>
+					</div>
+				</div>
+
+				<div class="btn-line">
+					<button class="btn type2">Export csv</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

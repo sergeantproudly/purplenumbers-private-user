@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<title>Purple Numbers - Premium Rate Numbers</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
+	<script type="text/javascript" src="assets/js/jquery.editable.select.demo.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="assets/js/html5.js"></script> 
+	<script type="text/javascript">
+		var E=('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:details:keygen:meter:progress:figcaption:main:mark:summary:time:wbr').split(':');
+		for(var c=0;c<E.length;c++){document.createElement(E[c]);} 
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="layout" class="flexed">	
+		<header class="inversed">
+			<div class="holder wide">
+				<a href="#" id="logo"><img src="images/logo_inversed_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a>
+
+				<div class="menu-holder">
+					<nav id="menu-main">
+						<ul>						
+							<li><a href="numbers.html">Numbers</a></li>
+							<li><a href="check_access.html">Check access</a></li>
+							<li><a href="sub_accounts.html">Sub-accounts</a></li>
+							<li><a href="my_summary.html">My Summary</a></li>
+							<li><a href="online_calls.html">On Line Calls</a></li>
+							<li><a href="test_panel.html">Test panel</a></li>
+							<li><a href="ivr.html">IVR</a></li>
+							<li class="active"><a href="my_account.html">My Account</a></li>
+						</ul>
+					</nav>
+
+					<div id="bl-account">
+						<a href="my_account.html" class="greetings">Hello Mr. paras.</a>
+						<div class="messages">3</div>
+						<a href="#" class="logout">Log out</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">			
+			<div class="holder">
+				
+				<h1>Edit My Profile</h1>
+
+				<article class="wnd" id="account">
+					<div class="padded">
+						<form action="#" method="post">
+							<div class="form">
+								<h2>Personality type</h2>
+								<ul class="radio-list" id="account-personality-type-list">
+									<li><input type="radio" name="personality_type" id="account-personality1" data-blocks="block-person" checked="checked"><label for="account-personality1">Private person</label></li>
+									<li><input type="radio" name="personality_type" id="account-personality2" data-blocks="block-company"><label for="account-personality2">Company</label></li>
+								</ul>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="text" name="firstname" maxlength="255" placeholder="First name" value="Shri" required>
+										<i>First name</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="lastname" maxlength="255" placeholder="Last name" value="Paras" required>
+										<i>Last name</i>
+									</div>
+									<div class="input-holder">
+										<input type="email" name="email" maxlength="255" placeholder="E-mail" value="sales@shriparascorp.com" required>
+										<i>E-mail</i>
+									</div>
+									<div class="hint">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="password" name="current_password" maxlength="255" placeholder="Current password" value="8f*djjsd6_jdgsw22">
+										<i>Current password</i>
+									</div>
+									<div class="hint">Enter your current password to change the E-mail address or Password.<br><a href="#">Request new password.</a></div>
+								</div>
+
+								<div class="block email-type">
+									<input type="checkbox" name="email_type" id="account-email-type" checked="checked"><label for="account-email-type">Plaintext email only</label>
+									<div class="hint">Check this option if you do not wish to receive email messages with graphics and styles.</div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="password" name="password" maxlength="255" placeholder="Password">
+										<i>Password</i>
+									</div>
+									<div class="input-holder">
+										<input type="password" name="confirm_password" maxlength="255" placeholder="Confirm password">
+										<i>Confirm password</i>
+									</div>
+									<div class="hint">To change the current user password, enter the new password in both fields.</div>
+								</div>
+
+								<div class="block block-person">
+									<div class="input-holder">
+										<input type="text" name="date_birth" maxlength="255" placeholder="Birth date" class="js-date" value="2001-12-11">
+										<i>Birth date</i>
+									</div>
+								</div>
+
+								<div class="block block-company hidden">
+									<div class="input-holder">
+										<input type="text" name="company_name" maxlength="255" placeholder="Company name*">
+										<i>Company name</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="company_position" maxlength="255" placeholder="Position">
+										<i>Position</i>
+									</div>
+								</div>
+								
+								<div class="block block-person image">
+									<h2>ID/Passport copy</h2>
+									<div class="js-preview preview">
+										<img src="images/_document.png" alt="#" title="#">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="passport1" id="account-passport1">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+								
+								<div class="block block-person image">
+									<h2>ID/Passport copy 2</h2>
+									<div class="js-preview preview hidden">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="passport2" id="account-passport2">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+								
+								<div class="block block-person image">
+									<h2>ID/Passport copy 3</h2>
+									<div class="js-preview preview hidden">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="passport3" id="account-passport3">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+
+								<div class="block block-company image hidden">
+									<h2>Ceritificate of Incorporation</h2>
+									<div class="js-preview hidden preview">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="certificate" id="account-certificate">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+
+								<div class="block block-company hidden">
+									<div class="input-holder">
+										<input type="text" name="tax_vat" maxlength="255" placeholder="Tax/VAT no.">
+										<i>Tax/VAT no.</i>
+									</div>
+								</div>
+
+								<div class="block block-company image hidden">
+									<h2>Signatory Passport</h2>
+									<div class="js-preview hidden preview">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="signatory_passport" id="account-signatory-passport">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+								
+								<div class="block block-company image hidden">
+									<h2>Signatory Proof of Signature</h2>
+									<div class="js-preview hidden preview">
+										<div class="close"></div>
+									</div>
+									<div class="js-upload">
+										<input type="file" name="signatory_proof" id="account-signatory-proof">
+										<button class="btn type3">Select and upload</button>
+									</div>
+									<div class="hint">Files must be less than 8 MB<br>Allowed file types: png gif jpg jpeg pdf.</div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<select name="registration_country" placeholder="Registration country">
+											<option value="1">Afganistan</option>
+											<option value="2">Albania</option>
+											<option value="3">Algeria</option>
+											<option value="4">Andorra</option>
+											<option value="5">Angola</option>
+											<option value="6">Argentina</option>
+											<option value="7">Armenia</option>
+											<option value="8">Australia</option>
+											<option value="9">Austria</option>
+											<option value="10">Azerbaijan</option>
+											<option value="11">Bahamas</option>
+											<option value="12">Bahrain</option>
+											<option value="13">Bangladesh</option>
+											<option value="14">Barbados</option>
+											<option value="15" selected="selected">India</option>
+										</select>
+										<i>Registration country</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="residential_city" maxlength="255" placeholder="Residential city" value="">
+										<i>Residential city</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="residential_street" maxlength="255" placeholder="Residential street" value="">
+										<i>Residential street</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="residential_zip" maxlength="255" placeholder="Registration ZIP" value="">
+										<i>Registration ZIP</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="fixed_phone_number" maxlength="255" placeholder="Fixed phone no." value="">
+										<i>Fixed phone no.</i>
+									</div>
+								</div>
+
+								<h2>Payout method</h2>
+								<ul class="radio-list payment">
+									<li><input type="radio" name="payment_method" id="account-payment-method1" checked="checked"><label for="account-payment-method1">Bank Transfer</label></li>
+									<li><input type="radio" name="payment_method" id="account-payment-method2"><label for="account-payment-method2">PayPal
+</label></li>
+									<li><input type="radio" name="payment_method" id="account-payment-method3" checked="checked"><label for="account-payment-method3">Western Union/MoneyGram</label></li>
+									<li><input type="radio" name="payment_method" id="account-payment-method4"><label for="account-payment-method4">Credit Card
+</label></li>
+								</ul>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="text" name="cell_phone_number" maxlength="255" placeholder="Cell phone no." value="">
+										<i>Cell phone no.</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="skype_name" maxlength="255" placeholder="Skype Name" value="">
+										<i>Skype Name</i>
+									</div>
+									<div class="hint">Your Skype Name can be viewed in your profile or account settings on skype.com. You can use this article <a href="#">How do I find my Skype Name?</a></div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="text" name="benificiary_name" maxlength="255" placeholder="Benificiary Name" value="">
+										<i>Benificiary Name</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="benificiary_address" maxlength="255" placeholder="Benificiary Address" value="">
+										<i>Benificiary Address</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="ip_address" maxlength="255" placeholder="YOUR IP ADDRESS (SIP)" value="92.42.110.109">
+										<i>YOUR IP ADDRESS (SIP)</i>
+									</div>
+									<div class="hint">OUR IP ADDRESS 94.249.157.86 (SIP): port 5060</div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<input type="text" name="bank_address" maxlength="255" placeholder="Bank Address" value="">
+										<i>Bank Address</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="bank_phone" maxlength="255" placeholder="Bank Phone" value="">
+										<i>Bank Phone</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="iban" maxlength="255" placeholder="Account Number/IBAN" value="">
+										<i>Account Number/IBAN</i>
+									</div>
+								</div>
+
+								<div class="block">
+									<div class="input-holder">
+										<select name="post_country" editable="true" placeholder="Post country">
+											<option value="1">Afganistan</option>
+											<option value="2">Albania</option>
+											<option value="3">Algeria</option>
+											<option value="4">Andorra</option>
+											<option value="5">Angola</option>
+											<option value="6">Argentina</option>
+											<option value="7">Armenia</option>
+											<option value="8">Australia</option>
+											<option value="9">Austria</option>
+											<option value="10">Azerbaijan</option>
+											<option value="11">Bahamas</option>
+											<option value="12">Bahrain</option>
+											<option value="13">Bangladesh</option>
+											<option value="14">Barbados</option>
+										</select>
+										<i>Post country</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="post_city" maxlength="255" placeholder="Post city" value="">
+										<i>Post city</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="post_street" maxlength="255" placeholder="Post street" value="">
+										<i>Post street</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="post_zip" maxlength="255" placeholder="Post ZIP" value="">
+										<i>Post ZIP</i>
+									</div>
+									<div class="input-holder">
+										<input type="text" name="swift_code" maxlength="255" placeholder="SWIFT Code" value="">
+										<i>SWIFT Code</i>
+									</div>
+									<div class="input-holder">
+										<textarea name="bank_details" placeholder="Intermediate Bank Details"></textarea>
+										<i>Intermediate Bank Details</i>
+									</div>
+									<div class="input-holder">
+										<textarea name="additional_information" placeholder="Additional Information"></textarea>
+										<i>Additional Information</i>
+									</div>
+								</div>
+
+								<div class="block agreement">
+									<input type="checkbox" name="agree" id="account-agree"><label for="account-agree">I want to receive site news on my email address</label>
+								</div>
+
+								<div class="btn-line">
+									<input type="submit" name="subm" value="Save" class="btn type2">
+								</div>
+							</div>
+						</form>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<div class="holder wide">
+				<div id="footer-logo"><a href="#"><img src="images/logo.svg" data-src="images/logo.svg" data-src-mobile="images/logo_min.svg" alt="Purple Numbers - Premium Rate Numbers" title="Purple Numbers - Premium Rate Numbers"></a></div>
+				<div id="copyright">&copy;2012 &#150; 2018 Purple Numbers</div>
+				
+				<ul id="footer-menu">
+					<li><a href="contacts.html" target="_blank">Contacts</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-terms" target="_blank">Terms & Conditions</a></li><!--
+					--><li><a href="https://www.exwal.com/#tab-privacy-policy" target="_blank">Privacy Policy</a></li><!--
+					--><li><a href="https://www.exwal.com/#modal-aml" target="_blank">AML/KYC</a></li>
+				</ul>
+			</div>		</footer>
+
+		<div id="sticky-bottom-section">
+			<div class="holder">
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-fadeout"></div>
+</body>
+</html>
