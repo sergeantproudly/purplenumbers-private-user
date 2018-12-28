@@ -4,7 +4,7 @@
 @import 'settings';
 @import 'jquery-ui';
 @import 'jquery.editable-select';
-@import 'jquery.jscrollpane';
+@import 'jquery.mCustomScrollbar';
 @import 'slick';
 
 html.html-modal-long {
@@ -1846,6 +1846,10 @@ footer {
 				font-weight: 700;
 				margin-bottom: 11px;
 			}
+		}
+
+		.js-scroll {
+			max-height: 370px;
 		}
 
 		table {
@@ -4315,7 +4319,7 @@ footer {
 			width: 158px;
 
 			@media (max-width: $adaptive-width-mobile) {
-				width: 99px;
+				width: 105px;
 			}
 		}
 	}
@@ -4805,6 +4809,12 @@ footer {
 	}
 }
 
+#tabs-account {
+	@media (min-width: $adaptive-width-desktop-small) {
+		display: none;
+	}
+}
+
 #account {
 	padding-top: 40px;
 	padding-bottom: 37px;
@@ -4816,6 +4826,12 @@ footer {
 
 	@media (max-width: $adaptive-width-mobile) {
 		padding: 15px 0 24px; 
+	}
+
+	@media (min-width: $adaptive-width-desktop-small) {
+		#account-extra {
+			display: block !important;
+		}
 	}
 
 	.padded {
@@ -5151,15 +5167,22 @@ footer {
 	}
 
 	.account-attribs {
-		position: absolute;
-		top: 0;
-		right: 0;
+		@media (min-width: $adaptive-width-desktop-small) {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 
 		.block {
 			display: inline-block;
 			vertical-align: top;
 			width: 150px;
 			margin-left: 10px;
+
+			@media (max-width: $adaptive-width-mobile) {
+				display: block;
+				margin-left: 0;
+			}
 
 			&:first-child {
 				margin-left: 0;
@@ -5568,8 +5591,18 @@ footer {
 	&.clients {
 		width: 217px;
 
+		@media (max-width: $adaptive-width-mobile) {
+			width: 100%;
+		}
+
 		&.opened {
 			width: 397px;
+
+			@media (max-width: $adaptive-width-mobile) {
+				width: 96%;
+				height: 98%;
+				top: 1.5%;
+			}
 		}
 
 		h3,
@@ -5604,7 +5637,6 @@ footer {
 		}
 
 		.js-scroll {
-			max-height: 190px;
 			overflow: hidden;
 		}
 	}
@@ -5638,20 +5670,49 @@ footer {
 }
 
 #client {
+	@media (max-width: $adaptive-width-tablet) {
+		padding: 30px 0;
+	}
+
+	@media (max-width: $adaptive-width-mobile) {
+		padding: 21px 0;
+	}
+
 	h2,
 	.h2 {
 		font-size: 22px;
 		margin-bottom: 25px;
 		font-weight: 600;
+		position: relative;
+		padding-left: 50px;
+
+		@media (max-width: $adaptive-width-tablet) {
+			margin-bottom: 16px;
+		}
+
+		@media (max-width: $adaptive-width-mobile) {
+			font-size: 16px;
+			line-height: 1.4;
+			padding-left: 33px;
+		}
 
 		&:before {
 			content: '';
-			display: inline-block;
-			vertical-align: middle;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 39px;
 			height: 39px;
 			background-image: url('../../images/ico_account2.svg');
 			margin: -10px 12px 0 0; 
+
+			@media (max-width: $adaptive-width-mobile) {
+				width: 26px;
+				height: 26px;
+				background-size: contain;
+				margin-top: -4px;
+			}
 		}
 
 		&.cash {
@@ -5663,6 +5724,7 @@ footer {
 				@media (max-width: $adaptive-width-mobile) {
 					width: 28px;
 					height: 21px;
+					margin-top: 0;
 					background-size: contain;
 				}
 			}
@@ -5674,14 +5736,32 @@ footer {
 			margin: -10px 0 0 7px;
 			font-size: 12px;
 			padding: 8px 12px;
+
+			@media (max-width: $adaptive-width-mobile) {
+				display: block;
+				margin: 9px 0 0 -32px;
+			}
 		}
 	}
 
 	.tools-right {
 		margin-bottom: 25px;
 
+		@media (max-width: $adaptive-width-tablet) {
+			text-align: left;
+			margin: 0 0 26px;
+		}
+
+		@media (max-width: $adaptive-width-mobile) {
+			margin-bottom: 0;
+		}
+
 		.client-account-menu {
 			margin-top: -60px;
+
+			@media (max-width: $adaptive-width-tablet) {
+				margin-top: 0;
+			}
 
 			& > ul {
 				display: block;
@@ -5691,6 +5771,13 @@ footer {
 					vertical-align: middle;
 					margin-left: 14px;
 
+					@media (max-width: $adaptive-width-mobile) {
+						display: block;
+						margin: 0;
+						font-size: 14px;
+						border-top: 1px solid #D5D5D5;
+					}
+
 					&:before {
 						content: '';
 						display: inline-block;
@@ -5699,6 +5786,10 @@ footer {
 						height: 20px;
 						background-color: #D5D5D5;
 						margin: -4px 14px 0 0;
+
+						@media (max-width: $adaptive-width-mobile) {
+							display: none;
+						}
 					}
 
 					&:first-child {
@@ -5712,6 +5803,11 @@ footer {
 					a {
 						color: $background-color-purple;
 						text-decoration: none;
+
+						@media (max-width: $adaptive-width-mobile) {
+							display: block;
+							padding: 5px 0 4px;
+						}
 					}
 				}
 			}
@@ -5719,24 +5815,48 @@ footer {
 	}
 
 	.filter {
-		padding-top: 25px;
+		padding-top: 20px;
 		border-top: 1px solid #D5D5D5;
-		@extend %flex-space-between;
 		margin-bottom: 31px;
 
-		input[type='text'],
-		input[type='tel'],
-		input[type='email'],
-		input[type='password'],
-		input[type='number'] {
-			width: 90%;
-			height: 50px;
+		label {
+			display: block;
+			margin-bottom: 8px;
+
+			@media (max-width: $adaptive-width-mobile) {
+				font-size: 14px;
+				line-height: 1.2;
+				padding-right: 10%;
+				margin-bottom: 13px;
+			}
 		}
 
-		.btn {
-			width: 147px;
-			height: 50px;
-			margin-left: 20px;
+		.filter-line {
+			@extend %flex-space-between;
+
+			input[type='text'],
+			input[type='tel'],
+			input[type='email'],
+			input[type='password'],
+			input[type='number'] {
+				width: 90%;
+				height: 50px;
+
+				@media (max-width: $adaptive-width-mobile) {
+					height: 44px;
+				}
+			}
+
+			.btn {
+				width: 147px;
+				height: 50px;
+				margin-left: 20px;
+
+				@media (max-width: $adaptive-width-mobile) {
+					height: 44px;
+					margin-left: 8px;
+				}
+			}
 		}
 	}
 
