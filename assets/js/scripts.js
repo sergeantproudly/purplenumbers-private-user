@@ -629,6 +629,13 @@ function checkLogoFooter() {
 					$(radio).change();
 				}
 			});
+
+			// FIXME DEMO
+			console.log($('#account .profile-table .btn-line a>button'));
+			$('#account .profile-table .btn-line a>button').click(function(e) {
+				e.preventDefault();
+				document.location.href = $(this).parent().attr('href');
+			});
 		}
 
 		// PRODUCTS
