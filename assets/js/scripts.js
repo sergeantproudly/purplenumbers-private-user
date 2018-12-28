@@ -59,11 +59,11 @@ function initElements(element) {
 			var offset = $(select).attr('data-offset');
 			if ($(select).attr('data-pos') == 'right') {
 				var data = {
-					position: {my : "right"+(offset?"+"+offset:"")+" top+12", at: "right bottom"}
+					position: {my : "right"+(offset?"+"+offset:"")+" top", at: "right bottom"}
 				}
 			} else {
 				var data = {
-					position: {my : "left"+(offset?"+"+offset:"")+" top+12"}
+					position: {my : "left"+(offset?"+"+offset:"")+" top"}
 				}
 			}
 			if ($(select).attr('placeholder')) {
@@ -756,5 +756,11 @@ function checkLogoFooter() {
 				scrollsInit($('#my-clients-results').parent(), true);
 			});
 		}
+
+		// TABLE DATA SORT
+		$('.sort').click(function() {
+			// FIXME DEMO
+			$(this).toggleClass('act');
+		});
 	})
 })(jQuery)
