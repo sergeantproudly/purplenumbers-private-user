@@ -44,7 +44,7 @@ $adaptive-width-mobile: 540px;
 .holder {
 	margin: 0 auto;
 	padding: 0 $padding-edges;
-	max-width: 1070px;
+	max-width: 1440px;
 	box-sizing: border-box;
 	@media (max-width: $adaptive-width-desktop-small) {
 		max-width: 1000px;
@@ -61,7 +61,7 @@ $adaptive-width-mobile: 540px;
 	}
 
 	&.wide {
-		max-width: 1480px;
+		max-width: 1440px;
 	}
 
 	&.mobile-unpadded {

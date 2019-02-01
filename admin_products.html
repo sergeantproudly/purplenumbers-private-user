@@ -15,7 +15,7 @@
 	<meta name="msapplication-config" content="images/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<title>Purple Numbers - Premium Rate Numbers</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css?1"/>
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js?1"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="assets/js/html5.js"></script> 
 	<script type="text/javascript">
@@ -212,85 +212,171 @@
 						</div>
 					</div>
 
-					<div class="padded">
-						<h2>Tariffs</h2>
+					<div class="col-half">
+						<div class="padded">
+							<h2>Tariffs</h2>
 
-						<div class="tools-right">
-							<div class="btn-line">
-								<button class="btn type2" onclick="showModal('modal-add-price');">Add price</button>
+							<div class="tools-right">
+								<div class="btn-line">
+									<button class="btn type2" onclick="showModal('modal-add-price');">Add price</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="table-holder js-scroll">
+							<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
+								<table cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th>Code 7840200</th>
+											<th>In use (20)</th>
+											<th>Del</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="code">$ 0.100; 1/1</td>										
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.055; 7/1</td>										
+											<td>(6)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.055; 7/1 (hidden)</td>										
+											<td>(1)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.065; 15/15</td>										
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.100; 1/1</td>										
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.055; 7/1</td>										
+											<td>(6)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.055; 7/1 (hidden)</td>										
+											<td>(1)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="code">$ 0.065; 15/15</td>										
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
 
-					<div class="table-holder js-scroll">
-						<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
-							<table cellspacing="0" cellpadding="0">
-								<thead>
-									<tr>
-										<th>Code 7840200</th>
-										<th>In use (20)</th>
-										<th>Del</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="code">$ 0.100; 1/1</td>										
-										<td>(21)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.055; 7/1</td>										
-										<td>(6)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.055; 7/1 (hidden)</td>										
-										<td>(1)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.065; 15/15</td>										
-										<td>(21)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.100; 1/1</td>										
-										<td>(21)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.055; 7/1</td>										
-										<td>(6)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.055; 7/1 (hidden)</td>										
-										<td>(1)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="code">$ 0.065; 15/15</td>										
-										<td>(21)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+					<div class="col-half">
+						<div class="padded">
+							<h2>Numbers</h2>
+
+							<div class="tools-right">
+								<div class="btn-line">
+									<button class="btn type2" onclick="showModal('modal-add-numbers');">Add numbers</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="table-holder js-scroll">
+							<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
+								<table cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th>Starting number</th>
+											<th>Ending number</th>
+											<th>Total (60)</th>
+											<th>In use (17)</th>
+											<th>Del</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(50)</td>
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(180)</td>
+											<td>(6)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(25)</td>
+											<td>(1)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(50)</td>
+											<td>(21)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(180)</td>
+											<td>(6)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>78402000120</td>										
+											<td>78402000120</td>
+											<td>(25)</td>
+											<td>(1)</td>
+											<td class="del">
+												<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 
@@ -310,61 +396,6 @@
 							<li>€ 0.145; 1/1</li>
 							<li>$ 0.110; 30/30</li>
 						</ul>
-					</div>
-
-					<div class="padded">
-						<h2>Numbers</h2>
-
-						<div class="tools-right">
-							<div class="btn-line">
-								<button class="btn type2" onclick="showModal('modal-add-numbers');">Add numbers</button>
-							</div>
-						</div>
-					</div>
-
-					<div class="table-holder js-scroll">
-						<div class="js-fadeout" data-nowrap="false" data-mobile-only="true">
-							<table cellspacing="0" cellpadding="0">
-								<thead>
-									<tr>
-										<th>Starting number</th>
-										<th>Ending number</th>
-										<th>Total (60)</th>
-										<th>In use (17)</th>
-										<th>Del</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>78402000120</td>										
-										<td>78402000120</td>
-										<td>(50)</td>
-										<td>(21)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td>78402000120</td>										
-										<td>78402000120</td>
-										<td>(180)</td>
-										<td>(6)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-									<tr>
-										<td>78402000120</td>										
-										<td>78402000120</td>
-										<td>(25)</td>
-										<td>(1)</td>
-										<td class="del">
-											<a href="#"><img src="images/ico_delete.svg" alt="Delete" title="Delete"></a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
 					</div>
 				</article>
 			</div>

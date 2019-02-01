@@ -383,6 +383,31 @@ function checkLogoFooter() {
 	$('#footer-logo>a>img').attr('src', src);
 }
 
+function initStickyFilter(filter) {
+	var offset = $(filter).offset().top;
+	if (__isMobile) offset -= 10;
+	else offset -= 21;
+	var height = $(filter).outerHeight(true);
+	var left = $(filter).closest('.wnd').offset().left;
+	var width = $(filter).closest('.wnd').outerWidth();
+
+	$(window).scroll(function() {
+		var scrolled = $(this).scrollTop();
+
+		if (scrolled >= offset) {
+			$(filter).addClass('sticky').css({
+				'left': left,
+				'width': width
+			}).parent().height(height);
+		} else {
+			$(filter).removeClass('sticky').css({
+				'left': 'auto',
+				'width': 'auto'
+			}).parent().height('auto');
+		}
+	});
+}
+
 (function ($) {
 	$.fn.lightTabs = function() {
 		var showTab = function(tab, saveHash) {
@@ -514,6 +539,8 @@ function checkLogoFooter() {
 					setTimeout(function() {
 						showBottomSection();
 					}, 1000);
+				} else if ($('#numbers-order').css('display') == 'block') {
+					initStickyFilter($('#numbers-order-filter'));
 				} else {
 					hideBottomSection();
 				}
@@ -523,6 +550,10 @@ function checkLogoFooter() {
 				setTimeout(function() {
 					showBottomSection();
 				}, 1000);
+			}
+
+			if ($('#numbers-order').css('display') == 'block') {
+				initStickyFilter($('#numbers-order-filter'));
 			}
 
 			// FIXME DEMO
@@ -819,29 +850,8 @@ function checkLogoFooter() {
 
 		// STICKY FILTERS
 		if ($('.filter[data-sticky="true"]').length) {
-			$('.filter[data-sticky="true"]').each(function(index, filter) {
-				var offset = $(filter).offset().top;
-				if (__isMobile) offset -= 10;
-				else offset -= 21;
-				var height = $(filter).outerHeight(true);
-				var left = $(filter).closest('.wnd').offset().left;
-				var width = $(filter).closest('.wnd').outerWidth();
-
-				$(window).scroll(function() {
-					var scrolled = $(this).scrollTop();
-
-					if (scrolled >= offset) {
-						$(filter).addClass('sticky').css({
-							'left': left,
-							'width': width
-						}).parent().height(height);
-					} else {
-						$(filter).removeClass('sticky').css({
-							'left': 'auto',
-							'width': 'auto'
-						}).parent().height('auto');
-					}
-				});
+			$('.filter[data-sticky="true"]').not('[data-lazy-init="true"]').each(function(index, filter) {
+				initStickyFilter(filter);
 			});
 		}
 	})

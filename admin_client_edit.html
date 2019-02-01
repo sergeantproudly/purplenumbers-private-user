@@ -15,7 +15,7 @@
 	<meta name="msapplication-config" content="images/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<title>Purple Numbers - Premium Rate Numbers</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css?1"/>
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 	<!--<script type="text/javascript" src="assets/js/jquery.editable.select.js"></script>-->
@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js?1"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="assets/js/html5.js"></script> 
 	<script type="text/javascript">
@@ -100,6 +100,11 @@
 						<div id="account-info">
 							<div class="padded">
 								<div class="form">
+									<ul class="radio-list" id="account-personality-type-list">
+										<li><input type="radio" name="personality_type" id="account-personality1" data-blocks="block-person" checked="checked"><label for="account-personality1">Private person</label></li>
+										<li><input type="radio" name="personality_type" id="account-personality2" data-blocks="block-company"><label for="account-personality2">Company</label></li>
+									</ul>
+
 									<div class="block">
 										<div class="input-holder">
 											<input type="text" name="firstname" maxlength="255" placeholder="First name *" required>
@@ -115,11 +120,6 @@
 										</div>
 										<div class="hint">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
 									</div>
-
-									<ul class="radio-list" id="account-personality-type-list">
-										<li><input type="radio" name="personality_type" id="account-personality1" data-blocks="block-person" checked="checked"><label for="account-personality1">Private person</label></li>
-										<li><input type="radio" name="personality_type" id="account-personality2" data-blocks="block-company"><label for="account-personality2">Company</label></li>
-									</ul>
 
 									<div class="block">
 										<div class="input-holder">
