@@ -197,7 +197,15 @@ function onResize() {
 
 	fadeoutInit();
 
-	checkLogoFooter()
+	checkLogoFooter();
+
+	if ($('#messenger').length) {
+		if (__isMobileMobile) {
+			if (!$('body').hasClass('mobile-layout')) $('body').addClass('mobile-layout');
+		} else {
+			if ($('body').hasClass('mobile-layout')) $('body').removeClass('mobile-layout');
+		}
+	}
 }
 
 function parseUrl(url) {
@@ -852,6 +860,132 @@ function initStickyFilter(filter) {
 		if ($('.filter[data-sticky="true"]').length) {
 			$('.filter[data-sticky="true"]').not('[data-lazy-init="true"]').each(function(index, filter) {
 				initStickyFilter(filter);
+			});
+		}
+
+		// MESSENGER
+		if ($('#messenger').length) {
+			var $messenger = $('#messenger');
+			var $body = $messenger.find('.body');
+			var $typing = $('#messenger-typing');
+			var $textarea = $messenger.find('.form textarea');
+			var inith = __isMobileMobile ? 44 : 50;
+			var $submit = $messenger.find('.form .submit-btn');
+
+			var space1 = $messenger.closest('.content').height() - $messenger.closest('article').siblings('h1').outerHeight(true);
+			if (!__isMobileMobile) {
+				var space2 = space1 - $messenger.find('.header').outerHeight(true) - $messenger.find('.form').outerHeight(true);
+			} else {
+				var space2 = $(window).height() - $('header').outerHeight(true) - $messenger.find('.header').outerHeight(true) - $messenger.find('.form').outerHeight(true);
+			}
+
+			$messenger.find('.body').height(space2);
+
+			// side menu
+			if ($('#support aside').length) {
+				// not small mobile width
+				if (!__isMobileMobile) {
+					$('#support aside .js-scroll').height(space1);
+					scrollsInit($('#support aside'), true);
+
+					$('#support aside ul li').click(function() {
+						if (!$(this).hasClass('selected')) {
+							$(this).addClass('selected').siblings('li').removeClass('selected');
+
+							// FIXME DEMO
+							var name = $(this).children('.name').text();
+							if ($(this).hasClass('online')) {
+								$messenger.find('.header').addClass('online');
+							} else {
+								$messenger.find('.header').removeClass('online');
+							}
+							$messenger.find('.header h2').text('Chat with ' + name);
+							$body.html('');
+						}
+					});
+
+				// small mobile width
+				} else {
+					$messenger.hide();
+					$messenger.find('.header .back-btn').addClass('shown');
+
+					$('#support aside ul li').click(function() {
+						// FIXME DEMO
+						var name = $(this).children('.name').text();
+						if ($(this).hasClass('online')) {
+							$messenger.find('.header').addClass('online');
+						} else {
+							$messenger.find('.header').removeClass('online');
+						}
+						$messenger.find('.header h2').text('Chat with ' + name);
+						$body.html('');
+
+						$('#support aside').hide();
+						$messenger.show();
+					});
+
+					$messenger.find('.header .back-btn').click(function() {
+						$messenger.hide();
+						$('#support aside').show();						
+					});
+				}
+			}
+
+			if (!$textarea.data('autoheight-inited')) {
+				$textarea.attr('rows', 1);
+				$textarea.on('input', function() {
+					$(this).css('height', 'auto');
+					if ($(this)[0].scrollHeight - inith >=  15) {
+						$(this).css('height', $(this)[0].scrollHeight +'px');
+					} else {
+						$(this).css('height', inith + 'px');
+					}
+				});
+				if ($textarea.css('display') != 'none') $textarea.trigger('input');
+				$textarea.data('autoheight-inited', true);
+			}
+			$textarea.on('keydown', function(e) {
+				if (e.keyCode === 13 && !e.shiftKey && !e.ctrlKey) {
+					e.preventDefault();
+				    $submit.click();
+				}
+			});
+
+			$body.get(0).scrollTop = $body.get(0).scrollHeight;
+			$submit.click(function(e) {
+				e.preventDefault();
+
+				if ($textarea.val()) {
+					var text = $textarea.val();
+					var msg = document.createElement('div');
+					var msg2 = document.createElement('div');
+					var now = new Date();
+
+					$(msg).addClass('msg my');
+					$(msg).append('<div class="inr"><p></p><div class="ts"></div></div>');
+					$(msg).find('p').html((text + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1<br>$2'));
+					$(msg).find('.ts').text(now.getDate() + '.' + ('0'+(now.getMonth()+1)).slice(-2) + '.' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' Sender name');
+
+					$(msg2).addClass('msg');
+					$(msg2).append('<div class="inr"><p></p><div class="ts"></div></div>');
+					$(msg2).find('p').html('Thanks for your question. We will reply you soon.');
+					$(msg2).find('.ts').text(now.getDate() + '.' + ('0'+(now.getMonth()+1)).slice(-2) + '.' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' Support');
+
+					$textarea.val('').css('height', inith + 'px');
+
+					// FIXME DEMO
+					$body.append(msg);
+					$body.get(0).scrollTop = $body.get(0).scrollHeight;
+					setTimeout(function() {
+						$typing.stop().fadeIn(__animationSpeed);
+						setTimeout(function() {
+							$typing.stop().fadeOut(__animationSpeed, function() {
+								$body.append(msg2);
+								$body.get(0).scrollTop = $body.get(0).scrollHeight;
+							});
+						}, 1500);
+					}, 1000);
+				}
 			});
 		}
 	})

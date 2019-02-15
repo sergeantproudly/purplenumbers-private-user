@@ -46,9 +46,9 @@
 							<li><a href="admin_products.html">Products</a></li>
 							<li><a href="admin_invoices.html">Invoices</a></li>
 							<li><a href="admin_online_calls.html">On Line Calls</a></li>
-							<li class="active"><a href="admin_load_access.html">Load access list</a></li>
+							<li><a href="admin_load_access.html">Load access list</a></li>
 							<li><a href="admin_stats.html">Stats</a></li>
-							<li><a href="admin_messages.html">Messages</a></li>
+							<li class="active"><a href="admin_messages.html">Messages</a></li>
 						</ul>
 					</nav>
 
@@ -64,26 +64,115 @@
 		<section class="content">			
 			<div class="holder">
 				
-				<h1>Load Access List</h1>
+				<h1>Messages</h1>
 
-				<article class="wnd" id="load-access">
-					<div class="padded">
-						<label>Select a CSV file:</label>
-						<div class="block image">
-							<div class="js-preview preview hidden">
-								<div class="close"></div>
+				<article class="wnd" id="support">
+					<aside>
+						<ul class="js-scroll" data-lazy-init="true">
+							<li class="online">
+								<div class="name" title="online"><span>Moreno Curcio</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li class="online">
+								<div class="name" title="online"><span>Ma Cristina Luce</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li class="online">
+								<div class="name" title="online"><span>Oleksandr Bespalko</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li class="online">
+								<div class="name" title="online"><span>Saiful Islam</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li class="selected">
+								<div class="name" title="offline"><span>Nikolay Iliev</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Faruk Ahammed</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Ma Cristina Luce</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Oleksandr Longlongusername</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Saiful Islam</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Nikolay Iliev</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Faruk Ahammed</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Ma Cristina Luce</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+							<li>
+								<div class="name" title="offline"><span>Oleksandr Bespalko</span></div>
+								<div class="datetime">23.05.2017 14:22:02</div>
+							</li>
+						</ul>
+					</aside>
+
+					<div id="messenger">
+						<div class="inner">
+							<div class="header online">
+								<div class="back-btn"></div>
+								<h2>Chat with Nikolay Iliev</h2>
 							</div>
-							<div class="js-upload">
-								<input type="file" name="passport1" id="account-passport1">
-								<button class="btn type3">Select and upload</button>
+
+							<div class="body">
+								<div class="msg">
+									<div class="inr">
+										<p>Hello</p>
+										<div class="ts">23.05.2017 12:39:53 Nikolay Iliev</div>
+									</div>
+								</div>
+								<div class="msg my">
+									<div class="inr">
+										<p>Hello Nikolay! Everything is fine! Thank you</p>
+										<div class="ts">23.05.2017 12:44:59 Support</div>
+									</div>
+								</div>
+								<div class="msg">
+									<div class="inr">
+										<p>I would like to ask a few questions about the service, can you help me with this?</p>
+										<div class="ts">23.05.2017 12:39:53 Nikolay Iliev</div>
+									</div>
+								</div>
+								<div class="msg my not-send">
+									<div class="inr">
+										<p>Of course. What is your question?</p>
+										<div class="ts">23.05.2017 12:44:59 Support</div>
+									</div>
+									<div class="status">
+										<span class="error">Message not sent</span> <span class="action">Resend</span>
+									</div>
+								</div>
 							</div>
-							<div class="hint">No csv-file has been uploaded.</div>
+
+							<div class="form">
+								<div class="wrap">
+									<div id="messenger-typing" class="typing">Support is typing...</div>
+								</div>
+								<div class="wrap">
+									<textarea name="message" placeholder="Enter a message" class="message-fld"></textarea>
+									<input type="image" name="submit" src="images/ico_send.svg" class="submit-btn">
+								</div>
+								<input type="checkbox" name="all" id="messenger-all"><label for="messenger-all">Send this message to all</label>
+							</div>
 						</div>
-					</div>
-
-					<div class="padded bottom">
-						<div class="info">Also see: <a href="#">Check access page</a></div>
-					</div>
+					</div>					
 				</article>
 			</div>
 		</section>

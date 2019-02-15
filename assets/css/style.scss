@@ -592,7 +592,7 @@ header {
 				display: block;
 				cursor: default;
 
-				@media (max-width: $adaptive-width-desktop-small) {
+				@media (max-width: $adaptive-width-desktop-middle) {
 					display: none;
 				}
 
@@ -649,7 +649,7 @@ header {
 			top: 0;
 			right: $padding-edges;
 
-			@media (max-width: $adaptive-width-desktop-small) {
+			@media (max-width: $adaptive-width-desktop-middle) {
 				right: 78px;
 				white-space: nowrap;
 			}
@@ -706,7 +706,7 @@ header {
 			}
 		}
 
-		@media (max-width: $adaptive-width-desktop-small) {
+		@media (max-width: $adaptive-width-desktop-middle) {
 			.menu-holder {
 				cursor: pointer;
 				display: block;
@@ -6932,6 +6932,428 @@ footer {
 					text-decoration: none;
 				}
 			}
+		}
+	}
+}
+
+#support {
+	padding: 0;
+	@extend %flex;
+
+	@media (max-width: $adaptive-width-mobile) {
+		@include flex-cancel();
+	}
+
+	aside {
+		width: 366px;
+		flex-basis: 366px;
+		@extend %flex-space-between;
+
+		@media (max-width: $adaptive-width-mobile) {
+			width: 100%;
+			@include flex-cancel();
+		}
+
+		& + #messenger {
+			border-left: 1px solid #D5D5D5;
+
+			@media (max-width: $adaptive-width-mobile) {
+				border-left: 0;
+			}
+		}
+
+		ul {
+			@include flex-cancel();
+			display: block;
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+
+			@media (max-width: $adaptive-width-mobile) {
+				height: auto;
+				overflow: visible;
+			}
+
+			.mCSB_container {
+				margin-right: 0 !important;
+			}
+
+			li {
+				display: block;
+				padding: 9px 18px 11px;
+				line-height: 1.5;
+				cursor: pointer;
+				border-top: 1px solid #D5D5D5;
+				@extend .transition-bg;
+
+				&:first-child {
+					border-top: 0;
+				}
+
+				.name {
+					font-size: 16px;
+					font-weight: 500;
+
+					span {
+						display: inline-block;
+						padding-right: 14px;
+					}
+				}
+
+				.datetime {
+					font-size: 12px;
+					font-weight: 500;
+					color: #939393;
+				}
+
+				&.online {
+					.name {
+						font-weight: 700;
+
+						span {
+							position: relative;
+
+							&:after {
+								content: '';
+								display: inline-block;
+								vertical-align: middle;
+								background-color: $background-color-purple;
+								width: 6px;
+								height: 6px;
+								position: absolute;
+								bottom: 9px;
+								right: 0;
+								@extend .radius;
+							}	
+						}
+					}
+				}
+
+				&.selected {
+					cursor: default;
+					background-color: $background-color-gray;
+
+					@media (max-width: $adaptive-width-mobile) {
+						cursor: pointer;
+						background-color: none;
+					}
+				}
+
+				&:hover {
+					background-color: $background-color-gray;
+					@extend .transition-bg;
+				}
+			}
+		}
+	}
+}
+
+#messenger {
+	@extend %flex-space-between;
+	width: 100%;
+	flex-basis: 100%;
+
+	@media (max-width: $adaptive-width-mobile) {
+		@include flex-cancel();
+	}
+
+	.inner {
+		@include flex-cancel();
+		display: block;
+		width: 100%;
+	}
+
+	.header {
+		border-bottom: 1px solid #D5D5D5;
+		background-color: #fff;
+		padding: 17px 30px 14px;
+		box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.14);
+		white-space: nowrap;
+		overflow: hidden;
+		@extend .radius-t;
+
+		@media (max-width: $adaptive-width-tablet) {
+			padding: 17px 22px 14px;
+		}
+
+		@media (max-width: $adaptive-width-mobile) {
+			padding: 13px 15px 10px;
+			box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.03);
+		}
+
+		.back-btn {
+			display: none;
+			background: url('../../images/ico_back.svg') no-repeat center;
+			box-sizing: content-box;
+			padding: 13px;
+			width: 10px;
+			height: 18px;
+			margin: -18px -4px -13px -13px;
+			cursor: pointer;
+
+			&.shown {
+				@media (max-width: $adaptive-width-mobile) {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		h2,
+		.h2 {
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+
+			@media (max-width: $adaptive-width-mobile) {
+				font-size: 16px;
+			}
+		}
+
+		&.online {
+			h2,
+			.h2 {
+				&:after {
+					content: '';
+					display: inline-block;
+					vertical-align: middle;
+					background-color: $background-color-purple;
+					width: 10px;
+					height: 10px;
+					margin: -8px 0 0 11px;
+					@extend .radius;
+
+					@media (max-width: $adaptive-width-mobile) {
+						width: 7px;
+						height: 7px;
+
+						margin: -5px 0 0 7px;
+					}
+				}
+			}
+		}
+	}
+
+	.body {
+		height: 340px;
+		padding: 0 30px;
+		margin-right: 30px;
+		overflow-y: scroll;
+
+		@media (max-width: $adaptive-width-tablet) {
+			padding: 0 22px;
+			margin-right: 22px;
+		}
+
+		@media (max-width: $adaptive-width-mobile) {
+			padding: 0 15px;
+			margin-right: 15px;
+		}
+
+		.msg {
+			font-size: 16px;
+			line-height: 1.4;
+			margin: -2px 0 25px;
+			color: #000;
+			cursor: default;
+
+			@media (max-width: $adaptive-width-mobile) {
+				font-size: 14px;
+				line-height: 1.2;
+			}
+
+			&:first-child {
+				margin-top: 30px;
+
+				@media (max-width: $adaptive-width-mobile) {
+					margin-top: 24px;
+				}
+			}
+
+			.inr {
+				position: relative;
+				display: inline-block;
+				background-color: $background-color-gray;
+				padding: 7px 21px 7px 15px;
+				max-width: 750px;
+				@extend .radius-sm;
+
+				@media (max-width: $adaptive-width-tablet) {
+					max-width: 75%;
+				}
+
+				@media (max-width: $adaptive-width-mobile) {
+					max-width: 85%;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 16px;
+					left: -13px;
+					border: 8px solid transparent;
+					border-top: 8px solid $background-color-gray;
+					border-right: 8px solid $background-color-gray;
+				}
+
+				p {
+					margin-bottom: 3px;
+				}
+
+				.ts {
+					font-size: 12px;
+					font-weight: 500;
+					color: #939393;
+				}
+			}
+
+			.status {
+				font-size: 12px;
+				font-weight: 500;
+
+				.error {
+					color: #FF3E3E;
+				}
+
+				.action {
+					color: $background-color-purple;
+					cursor: pointer;
+					padding-left: 6px;
+					@extend .transition-opacity;
+
+					&:hover {
+						opacity: 0.8;
+						@extend .transition-opacity;
+					}
+				}
+			}
+
+			&.my {
+				text-align: right;
+
+				.inr {
+					background-color: $background-color-purple;
+					color: #fff;
+					text-align: left;
+					padding: 7px 15px 7px 21px;
+
+					&:after {
+						left: auto;
+						right: -13px;
+						border: 8px solid transparent;
+						border-top: 8px solid $background-color-purple;
+						border-left: 8px solid $background-color-purple;
+					}
+
+					.ts {
+						color: rgba(255, 255, 255, 0.51);
+					}
+				}
+			}
+
+			&.not-send {
+				.inr {
+					opacity: 0.6;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.form {
+		padding: 40px 30px 27px;
+
+		@media (max-width: $adaptive-width-mobile) {
+			padding: 30px 15px 12px;
+		}
+
+		.typing {
+			display: none;
+			position: absolute;
+			top: -31px;
+			left: 0;
+			font-size: 12px;
+			font-weight: 500;
+			color: $background-color-purple;
+			cursor: default;
+		}
+
+		.message-fld {
+			position: relative;
+			width: 100%;
+			height: 50px;
+			resize: none;
+			max-height: 87px;
+			font-size: 16px;
+			padding-right: 42px;
+			line-height: 1.25;
+			border: 1px solid #D4D4D4;
+			overflow-y: hidden;
+			@extend .radius-sm;
+
+			@media (max-width: $adaptive-width-mobile) {
+				height: 44px;
+				font-size: 14px;
+				padding-top: 13px;
+			}
+		}
+
+		.submit-btn {
+			position: absolute;
+			bottom: 9px;
+			right: 1px;
+			padding: 11px 12px 12px 11px;
+			cursor: pointer;
+			@extend .radius-sm;
+			@extend .transition-opacity;
+
+			@media (max-width: $adaptive-width-mobile) {
+				bottom: 6px;
+				padding: 11px 12px 12px 11px;
+			}
+
+			&:hover {
+				@extend .transition-opacity;
+				opacity: 0.85;
+			}
+		}
+
+		.ui-checkboxradio-label {
+			font-size: 15px;
+			font-weight: 500;
+			color: #000;
+			padding-top: 5px;
+
+			@media (max-width: $adaptive-width-mobile) {
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+
+		.ui-checkboxradio-icon {
+			margin-right: 9px;
+			margin-top: -6px;
+		}
+	}
+}
+.mobile-layout {
+	@media (max-width: $adaptive-width-mobile) {
+		.content {
+			padding: 0;
+
+			.holder {
+				padding: 0;
+
+				h1,
+				.h1 {
+					display: none;
+				}
+			}
+		}
+
+		footer {
+			display: none;
 		}
 	}
 }

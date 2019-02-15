@@ -48,9 +48,9 @@
 							<li><a href="my_summary.html">My Summary</a></li>
 							<li><a href="online_calls.html">On Line Calls</a></li>
 							<li><a href="test_panel.html">Test panel</a></li>
-							<li class="active"><a href="ivr.html">IVR</a></li>
+							<li><a href="ivr.html">IVR</a></li>
 							<li><a href="my_account.html">My Account</a></li>
-							<li><a href="support.html">Support</a></li>
+							<li class="active"><a href="support.html">Support</a></li>
 						</ul>
 					</nav>
 
@@ -66,13 +66,54 @@
 		<section class="content">			
 			<div class="holder">
 				
-				<h1>IVR</h1>
+				<h1>Support</h1>
 
-				<article class="wnd" id="ivr">
-					<div class="padded">
-						<label>To create IVR click on the button below</label>
-						<a href="ivr_add.html"><button class="btn type2">Add ivr</button></a>
-					</div>
+				<article class="wnd" id="support">
+					<div id="messenger">
+						<div class="inner">
+							<div class="header">
+								<div class="back-btn"></div>
+								<h2>Chat with support</h2>
+							</div>
+
+							<div class="body">
+								<div class="msg my">
+									<div class="inr">
+										<p>Hello</p>
+										<div class="ts">23.05.2017 12:39:53 Nikolay Iliev</div>
+									</div>
+								</div>
+								<div class="msg">
+									<div class="inr">
+										<p>Hello Nikolay! Everything is fine! Thank you</p>
+										<div class="ts">23.05.2017 12:44:59 Support</div>
+									</div>
+								</div>
+								<div class="msg my">
+									<div class="inr">
+										<p>I would like to ask a few questions about the service, can you help me with this?</p>
+										<div class="ts">23.05.2017 12:39:53 Nikolay Iliev</div>
+									</div>
+								</div>
+								<div class="msg">
+									<div class="inr">
+										<p>Of course. What is your question?</p>
+										<div class="ts">23.05.2017 12:44:59 Support</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form">
+								<div class="wrap">
+									<div id="messenger-typing" class="typing">Support is typing...</div>
+								</div>
+								<div class="wrap">
+									<textarea name="message" placeholder="Enter a message" class="message-fld"></textarea>
+									<input type="image" name="submit" src="images/ico_send.svg" class="submit-btn">
+								</div>
+							</div>
+						</div>
+					</div>					
 				</article>
 			</div>
 		</section>
